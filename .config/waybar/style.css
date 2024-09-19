@@ -1,56 +1,33 @@
 * {
-    font-family: "Hack Nerd Font";
-    font-weight: bold;
-    font-size: 13px;
-
-  }
+  font-family: "Hack Nerd Font";
+  font-size: 14px;
+}
 
 window#waybar {
-    background-color: #1e1e2e;
+  background-color: #4b5563;
 }
 
 #window label {
-    background-color: red;
-    font-weight: bold;
+  background-color: red;
+  font-weight: bold;
 }
 
-#workspaces button.urgen{
-    color: #11111b;
-    background-color: #f38ba8;
-    margin-right: 4px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    border-radius: 15px;
-    padding: 20px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    font-weight: bold;
+#workspaces button.urgen {
+  color: #11111b;
+  background-color: #f38ba8;
+  font-weight: 800;
 }
 
-#workspaces button{
-    color: #11111b;
-    background-color: #7f849c;
-    margin-right: 4px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    border-radius: 15px;
-    padding: 10px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    font-weight: bold;
+#workspaces button {
+  color: #686c81;
+  font-weight: bolder;
+  font-weight: 800;
 }
 
-#workspaces button.active{
-    color: #11111b;
-    background-color: #74c7ec;
-    margin-right: 4px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    border-radius: 15px;
-    padding: 20px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    font-weight: bold;
+#workspaces button.active {
+  color: white;
+  font-weight: bolder;
+  font-weight: 800;
 }
 
 #clock,
@@ -65,60 +42,18 @@ window#waybar {
 #memory,
 #power-profiles-daemon,
 #privacy-item.screenshare,
-#privacy-item.audio-in{ 
-    color: #11111b;
-    margin-right: 4px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    border-radius: 15px;
-    padding: 20px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    font-weight: bold;
+#privacy-item.audio-in {
+  color: #d1d5db;
+  border-radius: 15px;
+  padding: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-weight: bold;
 
-    /* margin-top: 10px; */
-}
-
-
-#clock {
-  background-color: #f2cdcd;
-}
-
-
-#power-profiles-daemon{
-  background-color: #f5c2e7;
-}
-
-#network{
-  background-color: #94e2d5;
-}
-
-#cpu{
-  background-color: #cba6f7;
-}
-
-#memory{
-  background-color: #eba0ac;
-}
-
-#backlight {
-  background-color: #fab387;
-}
-
-#battery {
-  background-color: #f9e2af;
-}
-
-#pulseaudio {
-background-color: #a6e3a1;
-}
-
-#tray {
-    background-color: #585b70;
+  /* margin-top: 10px; */
 }
 
 #privacy-item.screenshare,
-#privacy-item.audio-in{
-  background-color: #f38ba8;
+#privacy-item.audio-in {
+  color: #ef4444;
 }
-

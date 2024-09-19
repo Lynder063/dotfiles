@@ -1,6 +1,6 @@
 {
   "layer": "top",
-  "height": 26,
+  "height": 30,
   "spacing": 0,
   "modules-left": [
     "hyprland/workspaces",
@@ -18,9 +18,7 @@
     "battery",
     "pulseaudio"
   ],
-  "hyprland/workspaces": {
-    "format": "⬤"
-  },
+  "hyprland/workspaces": {},
   "hyprland/window": {
     "max-length": 130,
     "separate-outputs": true
@@ -119,7 +117,7 @@
   },
   "privacy": {
     "icon-spacing": 3,
-    "icon-size": 15,
+    "icon-size": 12,
     "transition-duration": 250,
     "modules": [
       {
