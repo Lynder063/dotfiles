@@ -1,0 +1,144 @@
+{
+  "layer": "top",
+  "height": 26,
+  "spacing": 0,
+  "modules-left": [
+    "hyprland/workspaces",
+    "privacy"
+  ],
+  "modules-center": [
+    "tray",
+    "clock"
+  ],
+  "modules-right": [
+    "power-profiles-daemon",
+    "cpu",
+    "memory",
+    "backlight",
+    "battery",
+    "pulseaudio"
+  ],
+  "hyprland/workspaces": {
+    "format": "⬤"
+  },
+  "hyprland/window": {
+    "max-length": 130,
+    "separate-outputs": true
+  },
+  "cpu": {
+    "interval": 10,
+    "format": "{usage}% 󰍛",
+    "max-length": 10
+  },
+  "tray": {
+    "icon-size": 19,
+    "spacing": 5
+  },
+  "memory": {
+    "interval": 10,
+    "format": "{used:0.1f}G "
+  },
+  "clock": {
+    "interval": 1,
+    "format": " {:%d.%m.%y  %H:%M}",
+    "locale": "cs_CZ.UTF-8",
+    "tooltip-format": "<span size= '10pt' font='Hack Nerd Font'>{calendar}</span>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-click-forward": "tz_up",
+      "on-click-backward": "tz_down",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
+    }
+  },
+  "backlight": {
+    "format": "{percent}% {icon}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "battery": {
+    "bat": "BAT0",
+    "states": {
+      "warning": 30,
+      "critical": 20
+    },
+    "format": "{capacity}% {icon}",
+    "format-charging": "󱐋 {capacity}%",
+    "format-plugged": "󱐋 {capacity}%",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon} {format_source}",
+    "format-bluetooth": "{volume}% {icon}  {format_source}",
+    "format-bluetooth-muted": " {icon}  {format_source}",
+    "format-muted": " {format_source}",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "on-click": "pavucontrol"
+  },
+  "privacy": {
+    "icon-spacing": 3,
+    "icon-size": 15,
+    "transition-duration": 250,
+    "modules": [
+      {
+        "type": "audio-in"
+      },
+      {
+        "type": "screenshare"
+      }
+    ]
+  },
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": ""
+    }
+  }
+}
