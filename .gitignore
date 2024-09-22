@@ -95,3 +95,5 @@ Desktop
 .nv
 .gitconfig
 .config/katevirc
+.config/procps
+.npm
