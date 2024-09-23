@@ -90,6 +90,7 @@ Desktop
 .config/Trolltech.conf
 .config/trashrc
 .config/user-dirs.dirs
+.config/go
 .yarn
 .steam
 .nv
@@ -97,3 +98,8 @@ Desktop
 .config/katevirc
 .config/procps
 .npm
+.config/eog
+steam-2073850.log
+.config/go
+.config/efm-langserver
+go/

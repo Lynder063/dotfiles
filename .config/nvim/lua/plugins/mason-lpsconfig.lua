@@ -4,6 +4,7 @@ return{
 		ensure_installed = {
 			"efm",
 			"lua_ls",
+			"hyprls",
 		},
 		automatic_installation = true,
 	},
