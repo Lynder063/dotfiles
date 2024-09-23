@@ -16,10 +16,12 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 ZSH_AUTOSUGGEST_STRATEGY=( history completion )
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
-fastfetch &&
 
 alias ls='lsd'
 alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
+
+
+fastfetch &&

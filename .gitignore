@@ -105,3 +105,8 @@ Code/
 Code - OSS/
 .vscode
 .vscode-oss
+.config/VSCodium
+.gnupg
+.config/simple-update-notifier
+.viminfo
+.bash_history
