@@ -101,3 +101,7 @@ steam-2073850.log
 .config/go
 .config/efm-langserver
 go/
+Code/
+Code - OSS/
+.vscode
+.vscode-oss
