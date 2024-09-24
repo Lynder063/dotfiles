@@ -1,5 +1,9 @@
 # My Arch Linux dotfiles
 
+## TODO
+- [ ] Test install script
+
+
 ## Dependencies
 - Arch based linux system
 - [yay](https://github.com/Jguer/yay) 
