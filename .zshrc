@@ -24,4 +24,4 @@ alias lla='ls -la'
 alias lt='ls --tree'
 
 
-fastfetch &&
+pfetch &&
