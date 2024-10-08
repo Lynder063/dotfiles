@@ -94,6 +94,21 @@ matugen-bin \
 aylurs-gtk-shell-git 
 ```
 
+## SDDM theme
+- We need create default config
+```bash
+sudo mkdir -p /etc/sddm.conf.d/
+sudo cp /usr/lib/sddm/sddm.conf.d/default.conf /etc/sddm.conf.d/sddm.conf
+```
+
+- Now we need to copy our theme into this folder: `/usr/share/sddm/themes/`
+- And then we need to set theme in config file
+
+```bash
+sudo vim /etc/sddm.conf.d/sddm.conf
+```
+
+
 ## Setting up `ZSH`
 All config will import from `.dotfiles` repo. So only thing we need is to set zsh as default
 
