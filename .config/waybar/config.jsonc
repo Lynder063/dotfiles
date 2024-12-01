@@ -17,7 +17,7 @@
     "clock",
     ],
     "hyprland/window": {
-      "format": "{}",
+      "format": "> {}",
       "max-length": 35,
     },
     "hyprland/workspaces": {
