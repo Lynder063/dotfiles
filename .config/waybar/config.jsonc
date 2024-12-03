@@ -47,10 +47,10 @@
         "warning": 30,
         "critical": 15
       },
-      "format": "{icon}  {capacity}%",
-      "format-full": "{icon}  {capacity}%",
-      "format-charging": "  {capacity}%",
-      "format-plugged": "  {capacity}%",
+      "format": "{capacity}% {icon}",
+      "format-full": "{capacity}% {icon}",
+      "format-charging": "{capacity}% 󰂅",
+      "format-plugged": "{capacity}% ",
       "format-alt": "{time} {icon}",
       "format-icons": ["", "", "", "", ""]
     },
