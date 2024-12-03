@@ -3,7 +3,7 @@
 ## Manual installation
 ### Dependencies from arch repos
 ```bash
-sudo pacman -S hyprland sddm kitty qt5-wayland qt6-wayland xdg-desktop-portal-hyprland hypridle hyprlock hyprpaper kvantum kitty wofi waybar grim nautilus neovim pavucontrol slurp sof-firmware tela-circle-icon-theme-standard dunst zsh power-profiles-daemon
+sudo pacman -S hyprland sddm kitty qt5-wayland qt6-wayland xdg-desktop-portal-hyprland hypridle hyprlock hyprpaper kvantum kitty wofi waybar grim nautilus neovim pavucontrol slurp sof-firmware tela-circle-icon-theme-standard dunst zsh power-profiles-daemon hyprcursor
 ```
 ### Dependencies from AUR
 ```bash
@@ -52,7 +52,9 @@ alias lla='ls -la'
 alias lt='ls --tree'
 ```
 
+### Nautilus addons
 
-
+[Nautilus thumbnails](https://wiki.archlinux.org/title/GNOME/Files#Thumbnails)
+[Nautilus network shares](https://wiki.archlinux.org/title/GNOME/Files#Network_Shares_/_Virtual_Filesystems)
 
 
