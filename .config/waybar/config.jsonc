@@ -4,13 +4,15 @@
     "margin-right": 10,
     "height" : 30,
     "modules-left": [
-      "hyprland/workspaces"
+      "hyprland/workspaces",
+			"privacy"
     ],
     "modules-center": [
       "hyprland/window",
     ],
     "modules-right": [
     "pulseaudio",
+		"power-profiles-daemon",
     "tray",
     "backlight",
     "battery",
@@ -18,7 +20,7 @@
     ],
     "hyprland/window": {
       "format": "> {}",
-      "max-length": 35,
+      "max-length": 100,
     },
     "hyprland/workspaces": {
       "format": "{icon}",
@@ -72,4 +74,39 @@
       },
       "on-click": "pavucontrol"
     },
+
+	"privacy": {
+		"icon-spacing": 4,
+		"icon-size": 18,
+		"transition-duration": 250,
+		"modules": [
+			{
+				"type": "screenshare",
+				"tooltip": true,
+				"tooltip-icon-size": 24
+			},
+			{
+				"type": "audio-out",
+				"tooltip": true,
+				"tooltip-icon-size": 24
+			},
+			{
+				"type": "audio-in",
+				"tooltip": true,
+				"tooltip-icon-size": 24
+			}
+		]
+	},
+
+	"power-profiles-daemon": {
+  "format": "{icon}",
+  "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+  "tooltip": true,
+  "format-icons": {
+    "default": "",
+    "performance": "",
+    "balanced": "",
+    "power-saver": ""
+  },
+}
 }

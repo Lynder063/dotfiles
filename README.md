@@ -3,11 +3,11 @@
 ## Manual installation
 ### Dependencies from arch repos
 ```bash
-sudo pacman -S hyprland sddm kitty qt5-wayland qt6-wayland xdg-desktop-portal-hyprland hypridle hyprlock hyprpaper kvantum kitty wofi waybar grim nautilus neovim pavucontrol slurp sof-firmware tela-circle-icon-theme-standard dunst zsh
+sudo pacman -S hyprland sddm kitty qt5-wayland qt6-wayland xdg-desktop-portal-hyprland hypridle hyprlock hyprpaper kvantum kitty wofi waybar grim nautilus neovim pavucontrol slurp sof-firmware tela-circle-icon-theme-standard dunst zsh power-profiles-daemon
 ```
 ### Dependencies from AUR
 ```bash
-yay -S hyprpolkitagent-git catppuccin-gtk-theme-macchiato envycontrol fastfetch nwg-look oh-my-zsh-git zsh-theme-powerlevel10k zsh-syntax-highlighting zsh-autosuggestions hyprshot-git
+yay -S hyprpolkitagent-git catppuccin-gtk-theme-macchiato envycontrol fastfetch nwg-look oh-my-zsh-git zsh-theme-powerlevel10k zsh-syntax-highlighting zsh-autosuggestions hyprshot-git bibata-cursor-theme-bin
 ```
 
 - Povolení `SDDM`
