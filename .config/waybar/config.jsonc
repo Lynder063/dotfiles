@@ -15,7 +15,12 @@
   ],
   "hyprland/window": {
     "format": "{}",
-    "max-length": 100
+    "max-length": 100,
+    "rewrite": {
+      "(.*) - Brave": "$1",
+      "(.*) - Discord": "$1",
+      "(.*) - Visual Studio Code": "$1"
+    }
   },
   "hyprland/workspaces": {
     "format": "{icon}",
