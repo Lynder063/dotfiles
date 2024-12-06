@@ -85,3 +85,13 @@ Videos
 .config/jellyfin.org/
 .config/vlc
 /Screenshots
+Documents/Dockerfile
+.config/qBittorrent/
+.config/pupgui
+.config/jellyfin-mpv-shim
+.config/glib-2.0
+.config/mpv
+.config/project.zip
+.nv
+.nv/ComputeCache
+.config/gtk-4.0

@@ -1,111 +1,99 @@
 {
-  "margin-top" : 5,
-    "margin-left": 10,
-    "margin-right": 10,
-    "height" : 30,
-    "modules-left": [
-      "hyprland/workspaces",
-			"privacy"
-    ],
-    "modules-center": [
-      "hyprland/window",
-    ],
-    "modules-right": [
+  "margin-top": 5,
+  "margin-left": 10,
+  "margin-right": 10,
+  "height": 30,
+  "modules-left": ["hyprland/workspaces", "privacy"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": [
     "pulseaudio",
-		"power-profiles-daemon",
     "tray",
     "backlight",
+    "power-profiles-daemon",
     "battery",
-    "clock",
-    ],
-    "hyprland/window": {
-      "format": "> {}",
-      "max-length": 100,
-    },
-    "hyprland/workspaces": {
-      "format": "{icon}",
-      "on-click": "activate",
-    },
-    "clock": {
-      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-      "format-alt": "{:%Y-%m-%d}"
-    },
-    "cpu": {
-      "format": "  {usage}%",
-      "tooltip": false
-    },
-    "memory": {
-      "format": "{}%  "
-    },
-		"backlight": {
-				"device": "intel_backlight",
-				"format": "{percent}% {icon}",
-				"format-icons": ["", ""]
-		},
-    "battery": {
-      "states": {
-        "warning": 30,
-        "critical": 15
-      },
-      "format": "{capacity}% {icon}",
-      "format-full": "{capacity}% {icon}",
-      "format-charging": "{capacity}% 󰂅",
-      "format-plugged": "{capacity}% ",
-      "format-alt": "{time} {icon}",
-      "format-icons": ["", "", "", "", ""]
-    },
-		"tray": {
-		"icon-size": 21,
-		"spacing": 10
-			}, 
-		"pulseaudio": {
-      "format": "{icon}  {volume}%",
-      "format-bluetooth": "{volume}% {icon}  {format_source}",
-      "format-bluetooth-muted": " {icon}  {format_source}",
-      "format-muted": "",
-      "format-icons": {
-        "headphone": "",
-        "headset": "",
-        "phone": "",
-        "portable": "",
-        "car": "",
-        "default": ["", "", ""]
-      },
-      "on-click": "pavucontrol"
-    },
-
-	"privacy": {
-		"icon-spacing": 4,
-		"icon-size": 18,
-		"transition-duration": 250,
-		"modules": [
-			{
-				"type": "screenshare",
-				"tooltip": true,
-				"tooltip-icon-size": 24
-			},
-			{
-				"type": "audio-out",
-				"tooltip": true,
-				"tooltip-icon-size": 24
-			},
-			{
-				"type": "audio-in",
-				"tooltip": true,
-				"tooltip-icon-size": 24
-			}
-		]
-	},
-
-	"power-profiles-daemon": {
-  "format": "{icon}",
-  "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-  "tooltip": true,
-  "format-icons": {
-    "default": "",
-    "performance": "",
-    "balanced": "",
-    "power-saver": ""
+    "clock"
+  ],
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 100
   },
-}
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate"
+  },
+  "clock": {
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "{:%Y-%m-%d}"
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{percent}% {icon}",
+    "format-icons": ["", ""]
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity}% {icon}",
+    "format-full": "{capacity}% {icon}",
+    "format-charging": "{capacity}% 󰂅",
+    "format-plugged": "{capacity}% ",
+    "format-alt": "{time} {icon}",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10
+  },
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-bluetooth": "{volume}% {icon}  {format_source}",
+    "format-bluetooth-muted": " {icon}  {format_source}",
+    "format-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""]
+    },
+    "on-click": "pavucontrol"
+  },
+
+  "privacy": {
+    "icon-spacing": 4,
+    "icon-size": 18,
+    "transition-duration": 250,
+    "modules": [
+      {
+        "type": "screenshare",
+        "tooltip": true,
+        "tooltip-icon-size": 24
+      },
+      {
+        "type": "audio-out",
+        "tooltip": true,
+        "tooltip-icon-size": 24
+      },
+      {
+        "type": "audio-in",
+        "tooltip": true,
+        "tooltip-icon-size": 24
+      }
+    ]
+  },
+
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": ""
+    }
+  }
 }
