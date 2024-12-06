@@ -31,30 +31,15 @@ sudo usermod -aG input ${USER}
 ```
 
 
-### Setting up `ZSH`
+### Setting up `Fish`
+#### Installing **Oh my fish**
 ```bash
-zsh
-```
-- And select option **0**
-
-- Add these lines into your `.zshrc`
-```bash
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-
-ZSH_AUTOSUGGEST_STRATEGY=( history completion )
-
-alias ls='lsd'
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree'
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 ```
 
 ### Nautilus addons
 
-[Nautilus thumbnails](https://wiki.archlinux.org/title/GNOME/Files#Thumbnails)
-[Nautilus network shares](https://wiki.archlinux.org/title/GNOME/Files#Network_Shares_/_Virtual_Filesystems)
+- [Nautilus thumbnails](https://wiki.archlinux.org/title/GNOME/Files#Thumbnails) 
+- [Nautilus network shares](https://wiki.archlinux.org/title/GNOME/Files#Network_Shares_/_Virtual_Filesystems)
 
 
