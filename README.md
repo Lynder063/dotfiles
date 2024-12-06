@@ -36,6 +36,15 @@ sudo usermod -aG input ${USER}
 ```bash
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 ```
+#### Installing theme
+```bash
+omf install https://github.com/catppuccin/fish
+```
+- Selecting right theme
+```bash
+fish_config theme save "Catppuccin Macchiato"
+```
+- And overwrite
 
 ### Nautilus addons
 
