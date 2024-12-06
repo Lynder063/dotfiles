@@ -61,7 +61,6 @@
     },
     "on-click": "pavucontrol"
   },
-
   "privacy": {
     "icon-spacing": 4,
     "icon-size": 18,
@@ -84,7 +83,6 @@
       }
     ]
   },
-
   "power-profiles-daemon": {
     "format": "{icon}",
     "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
