@@ -15,3 +15,6 @@ keymap.set("v", ">",">gv") -- Shift Indentation to Right
 -- Comments
 vim.api.nvim_set_keymap("n", "<leader>/", "gcc", { noremap = false })
 vim.api.nvim_set_keymap("v", "<leader>/", "gbc", { noremap = false })
+
+-- Neo tree
+keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>")

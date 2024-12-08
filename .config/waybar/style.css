@@ -128,7 +128,6 @@ label:focus {
 #privacy {
   padding: 0 20px;
   font-weight: bold;
-  background-color: @base;
   border-radius: 15px;
 }
 #privacy-item.screenshare {
