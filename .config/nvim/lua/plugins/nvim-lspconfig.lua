@@ -5,6 +5,5 @@ return{
 		local lspconfig = require("lspconfig")
 		lspconfig.lua_ls.setup({})
 		lspconfig.marksman.setup({})
-		lspconfig.hyprls.setup({})
 	end
 }
