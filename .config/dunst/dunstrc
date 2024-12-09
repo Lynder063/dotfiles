@@ -1,6 +1,13 @@
 [global]
 frame_color = "#8aadf4"
 separator_color= frame
+font="JetBrainsMono Nerd Font 12"
+corner_radius= 5
+icon_position = left
+word_wrap = true
+follow = mouse
+icon_corner_radius = 5
+gap_size = 3
 
 [urgency_low]
 background = "#24273a"
