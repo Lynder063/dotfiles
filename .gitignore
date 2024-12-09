@@ -95,3 +95,4 @@ Documents/Dockerfile
 .nv
 .nv/ComputeCache
 .config/gtk-4.0
+go/
