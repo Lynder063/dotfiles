@@ -3,7 +3,7 @@
 ## Manual installation
 ### Dependencies from arch repos
 ```bash
-sudo pacman -S hyprland sddm kitty qt5-wayland qt6-wayland xdg-desktop-portal-hyprland hypridle hyprlock hyprpaper kvantum kitty wofi waybar grim nautilus neovim pavucontrol slurp sof-firmware tela-circle-icon-theme-standard dunst zsh power-profiles-daemon hyprcursor
+sudo pacman -S hyprland sddm kitty qt5-wayland qt6-wayland xdg-desktop-portal-hyprland hypridle hyprlock hyprpaper kvantum kitty wofi waybar grim nautilus neovim pavucontrol slurp sof-firmware tela-circle-icon-theme-standard dunst zsh power-profiles-daemon hyprcursor brightnessctl
 ```
 ### Dependencies from AUR
 ```bash

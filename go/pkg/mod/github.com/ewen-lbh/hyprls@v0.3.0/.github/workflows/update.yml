@@ -1,0 +1,21 @@
+name: Update submodules
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: ConorMacBride/install-package@v1
+        with:
+          apt: moreutils
+      - uses: actions/checkout@v2
+      - uses: extractions/setup-just@v2
+      - run: just pull-wiki
+      - run: just parser-data
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update parser data from wiki
