@@ -30,3 +30,9 @@ opt.encoding = "UTF-8"
 opt.foldmethod = "syntax"
 opt.foldenable = true
 opt.foldlevelstart = 1
+
+-- Zapnutí foldingu pomocí Tree-Sitter
+opt.foldmethod = "expr"   -- Určí, že se folding bude řídit výrazem
+opt.foldexpr = "nvim_treesitter#foldexpr()" -- Výraz pro Tree-Sitter folding
+opt.foldenable = false    -- Foldy jsou výchozí nerozbalené (volitelné)
+
