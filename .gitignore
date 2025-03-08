@@ -23,9 +23,11 @@ Videos/
 .bash_history
 .bash_logout
 .bash_profile
-
+.themes
+.fonts
 
 ## .config ignore files
+.config/nwg-displays/
 .config/abrt
 .config/akonadi
 .config/akonadi_akonotes_resource_0rc

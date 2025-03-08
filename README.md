@@ -1,8 +1,9 @@
-sudo dnf install waybar dunst waybar hyprland hypridle hyprlock kitty gtk-murrine-engine blueman-manager pavucontrol kvantum ngw-look ngw-displays
+sudo dnf install waybar dunst waybar hyprland hypridle hyprlock kitty gtk-murrine-engine blueman-manager pavucontrol kvantum ngw-look ngw-displays kvantum
 
 Jetbrain Mono nerd font
 FantasqueSansM Nerd Font
 [Icons](https://github.com/vinceliuice/Tela-icon-theme) a je to standart
+[Kvantum](https://github.com/catppuccin/Kvantum)
 
 [Theme](https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme)
 

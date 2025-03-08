@@ -3,9 +3,7 @@
 	"height": 47,
 	"reload_style_on_change": true,
 	"modules-left": [
-		"custom/launcher",
 		"hyprland/workspaces",
-		"mpris",
 		"bluetooth",
 		"gamemode",
 		"privacy"
