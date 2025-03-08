@@ -18,6 +18,11 @@ Public/
 Templates/
 .var/
 Videos/
+.cache/
+.gitconfig
+.bash_history
+.bash_logout
+.bash_profile
 
 
 ## .config ignore files
