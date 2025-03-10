@@ -30,6 +30,7 @@ tooltip {
 #pulseaudio,
 #gamemode,
 #language,
+#power-profiles-daemon,
 #network,
 #custom-updates {
 	text-shadow: 1px 1px 2px black; /* text shadow, offset-x | offset-y | blur-radius | color */
@@ -142,5 +143,12 @@ tooltip {
     to {
         background-color: #e64553;
     }
+}
+
+#power-profiles-daemon.performance{
+      color: #f38ba8;
+}
+#power-profiles-daemon.power-saver{
+          color: #a6e3a1;
 }
 

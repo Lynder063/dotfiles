@@ -4,7 +4,7 @@
 	"reload_style_on_change": true,
 	"modules-left": [
 		"hyprland/workspaces",
-		"bluetooth",
+		"power-profiles-daemon",
 		"gamemode",
 		"privacy"
 	],
@@ -100,6 +100,7 @@
 		"interval": 1,
 		"format": " {:%d.%m.%Y | %H:%M:%S}  ",
 		"tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "timezones": "Europe/Prague"
 		"calendar": {
 			"mode"          : "year",
 			"weeks-pos"     : "right",
@@ -198,6 +199,17 @@
 			"has-updates": "󱍷",
 			"updated": "󰂪"
 		}
-	}
+	},
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile} Driver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+          "default": "",
+          "performance": "",
+          "balanced": "",
+          "power-saver": ""
+        }
+    }
 }
 
