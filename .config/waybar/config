@@ -27,7 +27,7 @@
 		"on-click": "~/.local/scripts/wofi-power-menu.sh"
 	},
 	"hyprland/workspaces": {
-		"format": "<span size='small' font='normal Font Awesome 6 Free'>{icon}</span>",
+		"format": "{icon}",
 		"on-click": "activate",
 		"sort-by-number": true,
 		"on-scroll-up": "hyprctl dispatch workspace e-1",
