@@ -27,6 +27,8 @@ Videos/
 .fonts
 
 ## .config ignore files
+.config/vlc/
+.config/libreoffice/
 .config/nwg-displays/
 .config/abrt
 .config/akonadi
