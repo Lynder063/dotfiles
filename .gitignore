@@ -25,6 +25,12 @@ Videos/
 .bash_profile
 .themes
 .fonts
+.oh-my-zsh/
+.shell.pre-oh-my-zsh
+.zcompdump-pineapple-5.9
+.zcompdump-pineapple-5.9.zwc
+.zsh_history
+
 
 ## .config ignore files
 .config/vlc/
