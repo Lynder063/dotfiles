@@ -1,80 +1,100 @@
-# Get editor completions based on the config schema
-"$schema" = 'https://starship.rs/config-schema.json'
+format = '''
+\[$username$hostname\]\[$directory\]$git_branch$git_status$character$container$nodejs$buf$bun$c$cmake$dart$deno$elixir$golang$java$kotlin$kubernetes$lua$php$python 
+'''
 
-# Sets user-defined palette
-# Palettes must be defined _after_ this line
-palette = "catppuccin_macchiato"
+# Essencial stuff
+[hostname]
+ssh_only = false
+format = '[$ssh_symbol](bold blue)@[$hostname](bold red)'
+trim_at = '.companyname.com'
+disabled = false
 
-# Starship modules
-[character]
-# Note the use of Catppuccin color 'peach'
-success_symbol = "[[󰄛](green) ❯](peach)"
-error_symbol = "[[󰄛](red) ❯](peach)"
-vimcmd_symbol = "[󰄛 ❮](subtext1)" # For use with zsh-vi-mode
-
-[git_branch]
-style = "bold mauve"
+[username]
+style_user = 'white bold'
+style_root = 'red bold'
+format = '[$user]($style)'
+disabled = false
+show_always = true
 
 [directory]
 truncation_length = 4
-style = "bold lavender"
+truncation_symbol = '../'
+format = '[$path]($style)[$read_only]($read_only_style)'
+read_only = '🔒'
+home_symbol = '~'
+use_os_path_sep = true
 
-# Palette definitions
-[palettes.catppuccin_latte]
-rosewater = "#dc8a78"
-flamingo = "#dd7878"
-pink = "#ea76cb"
-mauve = "#8839ef"
-red = "#d20f39"
-maroon = "#e64553"
-peach = "#fe640b"
-yellow = "#df8e1d"
-green = "#40a02b"
-teal = "#179299"
-sky = "#04a5e5"
-sapphire = "#209fb5"
-blue = "#1e66f5"
-lavender = "#7287fd"
-text = "#4c4f69"
-subtext1 = "#5c5f77"
-subtext0 = "#6c6f85"
-overlay2 = "#7c7f93"
-overlay1 = "#8c8fa1"
-overlay0 = "#9ca0b0"
-surface2 = "#acb0be"
-surface1 = "#bcc0cc"
-surface0 = "#ccd0da"
-base = "#eff1f5"
-mantle = "#e6e9ef"
-crust = "#dce0e8"
+[git_branch]
+symbol = ''
+truncation_length = 4
+truncation_symbol = ''
+format = '\[[$symbol $branch(:$remote_branch)]($style)\]'
 
-[palettes.catppuccin_frappe]
-rosewater = "#f2d5cf"
-flamingo = "#eebebe"
-pink = "#f4b8e4"
-mauve = "#ca9ee6"
-red = "#e78284"
-maroon = "#ea999c"
-peach = "#ef9f76"
-yellow = "#e5c890"
-green = "#a6d189"
-teal = "#81c8be"
-sky = "#99d1db"
-sapphire = "#85c1dc"
-blue = "#8caaee"
-lavender = "#babbf1"
-text = "#c6d0f5"
-subtext1 = "#b5bfe2"
-subtext0 = "#a5adce"
-overlay2 = "#949cbb"
-overlay1 = "#838ba7"
-overlay0 = "#737994"
-surface2 = "#626880"
-surface1 = "#51576d"
-surface0 = "#414559"
-base = "#303446"
-mantle = "#292c3c"
-crust = "#232634"
+[git_status]
+ahead = '${count}'
+diverged = '${ahead_count}${behind_count}'
+behind = '${count}'
+
+[character]
+error_symbol = '[✗](bold red) '
+success_symbol = ''
+
+# Info stuff
+[container]
+format = '\[[$symbol \[$name\]]\]($style)'
+
+[nodejs]
+format = '\[[ $version](bold green)\]'
+not_capable_style = 'bold red'
+
+[buf]
+symbol = '🦬 '
+format = '\[[$symbol($version)]($style)\]'
+
+[bun]
+format = '\[[ $version](bold green)\]'
+
+[c]
+format = '\[[$name ($version)]($style)\]'
+
+[cmake]
+format = '\[[$symbol($version)]($style)\]'
+symbol = ''
+
+[dart]
+format = '\[[ $version](bold red)\]'
+
+[deno]
+format = '\[[ $version](green bold)\]'
+
+[elixir]
+format = '\[[$symbol($version \(OTP $otp_version\))]($style)\]'
+symbol = ' '
+
+[golang]
+format = '\[[ ($version)($mod_version)](bold cyan)\]'
+
+[java]
+format = '\[[${symbol}(${version} )]($style)\]'
+symbol = ''
+
+[kotlin]
+symbol = ''
+format = '\[[$symbol($version)]($style)\]'
+
+[kubernetes]
+format = '\[[ ($user on )($cluster in )$context \($namespace\)](dimmed green)\]'
+disabled = false
+
+[lua]
+format = '\[[ $version](bold blue)\]'
+
+[php]
+format = '\[[ $version](147 bold)\]'
+
+[python]
+format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
+symbol = ''
 
 [palettes.catppuccin_macchiato]
 rosewater = "#f4dbd6"
@@ -103,32 +123,3 @@ surface0 = "#363a4f"
 base = "#24273a"
 mantle = "#1e2030"
 crust = "#181926"
-
-[palettes.catppuccin_mocha]
-rosewater = "#f5e0dc"
-flamingo = "#f2cdcd"
-pink = "#f5c2e7"
-mauve = "#cba6f7"
-red = "#f38ba8"
-maroon = "#eba0ac"
-peach = "#fab387"
-yellow = "#f9e2af"
-green = "#a6e3a1"
-teal = "#94e2d5"
-sky = "#89dceb"
-sapphire = "#74c7ec"
-blue = "#89b4fa"
-lavender = "#b4befe"
-text = "#cdd6f4"
-subtext1 = "#bac2de"
-subtext0 = "#a6adc8"
-overlay2 = "#9399b2"
-overlay1 = "#7f849c"
-overlay0 = "#6c7086"
-surface2 = "#585b70"
-surface1 = "#45475a"
-surface0 = "#313244"
-base = "#1e1e2e"
-mantle = "#181825"
-crust = "#11111b"
-
