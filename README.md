@@ -1,31 +1,32 @@
 # Dotfiles
 ## Zakladni balicky
 ```sh 
-sudo dnf install waybar \
-                 dunst \
-                 waybar \
-                 hyprland \
-                 hypridle \
-                 hyprlock \
-                 kitty \
-                 gtk-murrine-engine \
-                 blueman-manager \
-                 pavucontrol \
-                 kvantum \
-                 ngw-look \
-                 ngw-displays \
-                 kvantum power-profiles-daemon \
-                 zsh \
-                 NetworkManager-wifi \
-                 zsh-syntax-highlighting \
-                 zsh-autosuggestions \
-                 lsd
+sudo dnf install 
+waybar \
+dunst \
+waybar \
+hyprland \
+hypridle \
+hyprlock \
+kitty \
+gtk-murrine-engine \
+blueman-manager \
+pavucontrol \
+kvantum \
+ngw-look \
+ngw-displays \
+kvantum power-profiles-daemon \
+zsh \
+NetworkManager-wifi \
+zsh-syntax-highlighting \
+zsh-autosuggestions \
+lsd
 ```
 ## Dodatecne veci
 - Starship shell
 - Jetbrain Mono nerd font
 - FantasqueSansM Nerd Font
-- [Icons](https://github.com/vinceliuice/Tela-icon-theme) a je to standart
+- [Icons](https://github.com/vinceliuice/Tela-icon-theme) a je to standard
 - [Kvantum](https://github.com/catppuccin/Kvantum)
 - [Theme](https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme)
 
