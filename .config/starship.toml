@@ -1,5 +1,5 @@
 format = '''
-\[$username$hostname\]\[$directory\]$git_branch$git_status$character$container$nodejs$buf$bun$c$cmake$dart$deno$elixir$golang$java$kotlin$kubernetes$lua$php$python 
+\[$username$hostname\]\[$directory\]$git_branch$git_status$character$container$nodejs$buf$bun$c$cmake$dart$deno$elixir$golang$java$kotlin$kubernetes$lua$php$python
 '''
 
 # Essencial stuff

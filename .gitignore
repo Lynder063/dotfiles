@@ -30,10 +30,12 @@ Videos/
 .zcompdump-pineapple-5.9
 .zcompdump-pineapple-5.9.zwc
 .zsh_history
-
+go/
 
 ## .config ignore files
+.config/obs-studio/
 .config/vlc/
+.config/vlc/vlc-qt-interface.conf
 .config/libreoffice/
 .config/nwg-displays/
 .config/abrt

@@ -1,6 +1,6 @@
 # Dotfiles
 ## Zakladni balicky
-```bash 
+```sh 
 sudo dnf install waybar \
                  dunst \
                  waybar \
