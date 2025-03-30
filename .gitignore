@@ -33,6 +33,7 @@ Videos/
 go/
 
 ## .config ignore files
+.config/libreoffice/
 .config/obs-studio/
 .config/vlc/
 .config/vlc/vlc-qt-interface.conf
