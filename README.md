@@ -1,4 +1,10 @@
 # Dotfiles
+
+## 🔄 Mirror Repository
+
+Tento repozitář je automaticky synchronizovaný mirror. Hlavní repozitář je hostován na [Forgejo](https://git.lynder.dev/Lynder063/dotfiles/).
+
+
 ## Zakladni balicky
 ```sh 
 sudo dnf install 
