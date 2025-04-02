@@ -12,12 +12,12 @@ return {
                 ensure_installed = {
                     "lua_ls",
                     "intelephense",
-                    "ts_ls",
                     "css_variables",
                     "cssls",
                     "jsonls",
                     "ansiblels",
                     "dockerls",
+                    "docker_compose_language_service",
                     "hyprls",
                 },
             })
@@ -30,6 +30,12 @@ return {
             local capabilities = require("cmp_nvim_lsp").default_capabilities()
             local lspconfig = require("lspconfig")
             lspconfig.hyprls.setup({
+                capabilities = capabilities,
+            })
+            lspconfig.dockerls.setup({
+                capabilities = capabilities,
+            })
+            lspconfig.docker_compose_language_service.setup({
                 capabilities = capabilities,
             })
             lspconfig.ansiblels.setup({
