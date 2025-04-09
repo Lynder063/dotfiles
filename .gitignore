@@ -30,6 +30,7 @@ Videos/
 .zcompdump-pineapple-5.9
 .zcompdump-pineapple-5.9.zwc
 .zsh_history
+.psql_history
 go/
 
 ## .config ignore files

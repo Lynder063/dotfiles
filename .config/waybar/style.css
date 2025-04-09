@@ -7,7 +7,8 @@
 }
 
 window#waybar {
-	background: transparent; /* main window transparent background */
+	background: transparent; 
+    /* background: #15161e; */
 }
 
 tooltip {
@@ -18,7 +19,6 @@ tooltip {
 
 #custom-launcher,
 #workspaces button,
-#mpris,
 #privacy-item,
 #bluetooth,
 #clock,
@@ -33,13 +33,19 @@ tooltip {
 #power-profiles-daemon,
 #network,
 #custom-updates {
-	text-shadow: 1px 1px 2px black; /* text shadow, offset-x | offset-y | blur-radius | color */
-	background: #15161e; /* background color */
-	margin: 10px 4px 4px 4px; /* empty spaces around */
-	padding: 4px 10px; /* extend pill size, vertical then horizontal */
-	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.4); /* pill background shadows */
-	border-radius: 5px; /* rounded corners */
-	color: #c0caf5;
+    text-shadow: 1px 1px 2px black;
+    /* text shadow, offset-x | offset-y | blur-radius | color */
+    background: #15161e;
+    /* background color */
+    margin: 0px 4px 0px 4px;
+    /* empty spaces around */
+    padding: 4px 10px;
+    /* extend pill size, vertical then horizontal */
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.4);
+    /* pill background shadows */
+    border-radius: 5px;
+    /* rounded corners */
+    color: #c0caf5;
 }
 
 #custom-updates {
@@ -107,6 +113,9 @@ tooltip {
 
 #workspaces button:first-child {
 	margin-left: 0;
+	background: #1e1e2e;
+    /* #1e1e2e */
+	border-color: #6c7086;
 }
 
 #workspaces button.active {
