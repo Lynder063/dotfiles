@@ -7,8 +7,8 @@
 }
 
 window#waybar {
-	background: transparent; 
-    /* background: #15161e; */
+	/* background: transparent; */
+    background: #15161e;
 }
 
 tooltip {
@@ -35,9 +35,10 @@ tooltip {
 #custom-updates {
     text-shadow: 1px 1px 2px black;
     /* text shadow, offset-x | offset-y | blur-radius | color */
-    background: #15161e;
+    background: #1e2030;
+    /* #15161e */
     /* background color */
-    margin: 0px 4px 0px 4px;
+    margin: 6px 4px 6px 4px;
     /* empty spaces around */
     padding: 4px 10px;
     /* extend pill size, vertical then horizontal */

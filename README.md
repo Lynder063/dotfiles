@@ -28,10 +28,15 @@ zsh-syntax-highlighting \
 zsh-autosuggestions \
 lsd
 ```
-## Dodatecne veci
-- Starship shell
+## Fonty
 - Jetbrain Mono nerd font
 - FantasqueSansM Nerd Font
+
+## Starship shell
+Pro instalaci staci nasledovat kroky na officialni strance a zapnout podporu pro `ZSH`
+[Odkaz na instalaci](https://starship.rs/guide/#%F0%9F%9A%80-installation)  
+
+## GTK A Qt themes + icons
 - [Icons](https://github.com/vinceliuice/Tela-icon-theme) a je to standard
 - [Kvantum](https://github.com/catppuccin/Kvantum)
 - [Theme](https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme)
@@ -46,8 +51,7 @@ sudo flatpak override --filesystem=$HOME/.themes
 
 - Override flatpak icons to `~/.icons`:
 
-```sh
-sudo flatpak override --filesystem=$HOME/.icons
+```sh sudo flatpak override --filesystem=$HOME/.icons
 ```
 
 - Override flatpak themes to `~/.config/gtk-4.0` locally:
