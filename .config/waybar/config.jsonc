@@ -1,150 +1,193 @@
 {
-  "layer": "top",
-  "height": 30,
-  "reload_style_on_change": true,
-  "modules-left": ["hyprland/workspaces", "power-profiles-daemon"],
-  "modules-center": ["clock", "privacy"],
-  "modules-right": [
-    "tray",
-    "battery",
-    "pulseaudio",
-    "backlight",
-    "hyprland/language",
-    "custom/updates",
-  ],
-  "hyprland/workspaces": {
-    "format": "{icon}",
-    "on-click": "activate",
-    "sort-by-number": true,
-    "on-scroll-up": "hyprctl dispatch workspace e-1",
-    "on-scroll-down": "hyprctl dispatch workspace e+1",
-    "format-icons": {
-      "1": "1",
-      "2": "2",
-      "3": "3",
-      "4": "4",
-      "5": "5",
-    },
-  },
-  "custom/updates": {
-    "exec": "bash $HOME/.config/waybar/scripts/checkupdate.sh",
-    "on-click-right": "bash $HOME/.config/waybar/scripts/checkupdates.sh",
-    "interval": 900,
-    "return-type": "json",
-    "format": "{icon}",
-    "format-alt": "{icon} {}",
-    "format-icons": {
-      "has-updates": "",
-      "updated": "",
-    },
-  },
-  "privacy": {
-    "icon-spacing": 2,
-    "icon-size": 12,
-    "transition-duration": 250,
-    "modules": [
-      {
-        "type": "screenshare",
-        "tooltip": true,
-        "tooltip-icon-size": 12,
-      },
-      {
-        "type": "audio-in",
-        "tooltip": true,
-        "tooltip-icon-size": 12,
-      },
+    "layer": "top",
+    "height": 30,
+    "reload_style_on_change": true,
+    "modules-left": [
+        "hyprland/workspaces",
+        "power-profiles-daemon"
     ],
-  },
-  "clock": {
-    "interval": 1,
-    "format": " {:%d.%m.%Y | %H:%M:%S}  ",
-    "tooltip-format": "<tt><small>{calendar}</small></tt>",
-    "timezones": "Europe/Prague",
-    "calendar": {
-      "mode": "month",
-      "weeks-pos": "right",
-      "mode-mon-col": 3,
-      "on-scroll": 1,
-      "format": {
-        "months": "<span color='#cdd6f4'><b>{}</b></span>",
-        "days": "<span color='#89b4fa'><b>{}</b></span>",
-        "weeks": "<span color='#b4befe'><b>W{}</b></span>",
-        "weekdays": "<span color='#b4befe'><b>{}</b></span>",
-        "today": "<span color='#f38ba8'><b>{}</b></span>",
-      },
+    "modules-center": [
+        "clock",
+        "privacy"
+    ],
+    "modules-right": [
+        "tray",
+        "battery",
+        "pulseaudio",
+        "backlight",
+        "hyprland/language",
+        "custom/updates",
+    ],
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "sort-by-number": true,
+        "on-scroll-up": "hyprctl dispatch workspace e-1",
+        "on-scroll-down": "hyprctl dispatch workspace e+1",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+        },
     },
-    "actions": {
-      "on-click-right": "mode",
-      "on-click-forward": "tz_up",
-      "on-click-backward": "tz_down",
-      "on-scroll-up": "shift_up",
-      "on-scroll-down": "shift_down",
+    "custom/updates": {
+        "exec": "bash $HOME/.config/waybar/scripts/checkupdate.sh",
+        "on-click-right": "bash $HOME/.config/waybar/scripts/checkupdates.sh",
+        "interval": 900,
+        "return-type": "json",
+        "format": "{icon}",
+        "format-alt": "{icon} {}",
+        "format-icons": {
+            "has-updates": "",
+            "updated": "",
+        },
     },
-  },
-  "tray": {
-    "icon-size": 15,
-    "spacing": 10,
-  },
-  "cpu": {
-    "interval": 30,
-    "format": " {}%",
-    "max-length": 10,
-  },
-  "memory": {
-    "interval": 30,
-    "format": " {}%",
-  },
-  "battery": {
-    "bat": "BAT0",
-    "interval": 60,
-    "max-length": 25,
-    "states": {
-      "warning": 30,
-      "critical": 15,
+    "privacy": {
+        "icon-spacing": 2,
+        "icon-size": 12,
+        "transition-duration": 250,
+        "modules": [
+            {
+                "type": "screenshare",
+                "tooltip": true,
+                "tooltip-icon-size": 12,
+            },
+            {
+                "type": "audio-in",
+                "tooltip": true,
+                "tooltip-icon-size": 12,
+            },
+        ],
     },
-    "format": "{icon} {capacity}%",
-    "format-full": "󱟢 {capacity}%",
-    "format-icons": {
-      "discharging": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
-      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
-      "plugged": "󱐥",
+    "clock": {
+        "interval": 1,
+        "format": " {:%d.%m.%Y | %H:%M:%S}  ",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "timezones": "Europe/Prague",
+        "calendar": {
+            "mode": "month",
+            "weeks-pos": "right",
+            "mode-mon-col": 3,
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#cdd6f4'><b>{}</b></span>",
+                "days": "<span color='#89b4fa'><b>{}</b></span>",
+                "weeks": "<span color='#b4befe'><b>W{}</b></span>",
+                "weekdays": "<span color='#b4befe'><b>{}</b></span>",
+                "today": "<span color='#f38ba8'><b>{}</b></span>",
+            },
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-click-forward": "tz_up",
+            "on-click-backward": "tz_down",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down",
+        },
     },
-  },
-  "pulseaudio": {
-    "format": "{icon} {volume}%",
-    "format-bluetooth": "{volume}% {icon}",
-    "format-muted": "󰖁 0% {format_source}",
-    "format-icons": {
-      "headphone": "",
-      "hands-free": "󰂑",
-      "headset": "󰂑",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": ["", ""],
+    "tray": {
+        "icon-size": 15,
+        "spacing": 10,
     },
-    "scroll-step": 5,
-    "on-click": "pavucontrol",
-    "ignored-sinks": ["Easy Effects Sink"],
-  },
-  "backlight": {
-    "format": "{percent}% {icon}",
-    "format-icons": ["", "", "", "", "", "", "", "", ""],
-  },
-  "hyprland/language": {
-    "format": "󰌌  {}",
-    "format-en": "EN",
-    "format-cs": "CZ",
-  },
-  "power-profiles-daemon": {
-    "format": "{icon}",
-    "tooltip-format": "Power profile: {profile} Driver: {driver}",
-    "tooltip": true,
-    "format-icons": {
-      "default": "",
-      "performance": "",
-      "balanced": "",
-      "power-saver": "",
+    "cpu": {
+        "interval": 30,
+        "format": " {}%",
+        "max-length": 10,
     },
-  },
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+    },
+    "battery": {
+        "bat": "BAT0",
+        "interval": 60,
+        "max-length": 25,
+        "states": {
+            "warning": 30,
+            "critical": 15,
+        },
+        "format": "{icon} {capacity}%",
+        "format-full": "󱟢 {capacity}%",
+        "format-icons": {
+            "discharging": [
+                "󰁺",
+                "󰁻",
+                "󰁼",
+                "󰁽",
+                "󰁾",
+                "󰁿",
+                "󰂀",
+                "󰂁",
+                "󰂂",
+                "󰁹"
+            ],
+            "charging": [
+                "󰢜",
+                "󰂆",
+                "󰂇",
+                "󰂈",
+                "󰢝",
+                "󰂉",
+                "󰢞",
+                "󰂊",
+                "󰂋",
+                "󰂅"
+            ],
+            "plugged": "󱐥",
+        },
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "󰝟",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "󰂑",
+            "headset": "󰂑",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "",
+                ""
+            ],
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "ignored-sinks": [
+            "Easy Effects Sink"
+        ],
+    },
+    "backlight": {
+        "format": "{percent}% {icon}",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+    },
+    "hyprland/language": {
+        "format": "󰌌  {}",
+        "format-en": "EN",
+        "format-cs": "CZ",
+    },
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile} Driver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "",
+            "performance": "",
+            "balanced": "",
+            "power-saver": "",
+        },
+    },
 }
