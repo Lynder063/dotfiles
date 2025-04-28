@@ -26,7 +26,11 @@ zsh \
 NetworkManager-wifi \
 zsh-syntax-highlighting \
 zsh-autosuggestions \
-lsd
+lsd \
+kvantum \
+kvantum-qt5 \
+qt5ct \
+qt6ct
 ```
 ## Fonty
 - Jetbrain Mono nerd font
