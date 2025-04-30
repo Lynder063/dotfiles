@@ -1,0 +1,34 @@
+(defpoll wifi_status :interval "5s" "~/.config/eww/scripts/wifi.sh")
+(defpoll volume_status :interval "2s" "~/.config/eww/scripts/volume.sh")
+
+(defwindow bar
+  :monitor 0
+  :windowtype "dock"
+  :geometry (geometry :x "0%"
+                      :y "0%"
+                      :width "90%"
+                      :height "10px"
+                      :anchor "top center")
+  :reserve (struts :side "top" :distance "4%")
+  (wifi)
+  (volume);; tady voláš widget wifi
+)
+
+(defwidget wifi []
+  (button
+    :class "wifi-button"
+    :geometry (geometry
+              :width "1px"
+              :height "0%")
+    (label :text wifi_status)) ;; BEZ {} uvnitř labelu
+)
+
+
+(defwidget volume []
+  (button
+    :class "wifi-button"
+    :geometry (geometry
+              :width "1px"
+              :height "0%")
+    (label :text volume_status)) ;; BEZ {} uvnitř labelu
+)
